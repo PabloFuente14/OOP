@@ -17,6 +17,6 @@ class LoggedDF(pd.DataFrame):
     # Call pd.DataFrame.to_csv on temp, passing in *args and **kwargs
     pd.DataFrame.to_csv(temp, *args, **kwargs)
     
-log = LoggedDF({"col1": [1,2], "col2": [3,4]})
+log = LoggedDF({"col1": [1,2], "col2": [3,4]})#
 log.to_csv("log.csv")
 print("hola")
