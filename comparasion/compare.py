@@ -40,6 +40,7 @@ for key,obj in person_dict.items():
     else:
         print(f"Object: {obj.__class__.__name__}, Name: {obj.name}, Age: {obj.age} \n")
     
+    
 #Set - repeated hash values are not being added
 person_list = [(hash(obj),obj) for obj in [p1,p2,c1,c2,c3]]
 for key, obj in person_list:
